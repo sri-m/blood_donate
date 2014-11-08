@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Management</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37631291-1']);
+  _gaq.push(['_setDomainName', 'webvator.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<body class="html front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-24 node-type-home-page site-name-hidden desktop">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+  
+  
+   <!-- start mobile only -->   
+  <!-- end mobile only -->
+  <!-- desktop & tablet only -->
+    <div id="header" class="desktop tablet without-secondary-menu">
+      <div class="section clearfix">
+
+              <a href="./" title="Home" rel="home" id="logo"></a> 
+              <a href="./" class="active"><img class="site-logo image-style-none" src="<%= image_path 'logo.png' %>"></a>       
+      
+          <div id="name-and-slogan" class="element-invisible">
+
+            <div id="site-name" class="element-invisible">
+              <strong>
+                 <a href="./"  rel="home"><span></span></a><a href="./" title="Home page" class="active">Australia Health</a>
+               </strong>
+             </div>
+                      
+           </div> <!-- /#name-and-slogan -->
+      
+      <div class="region region-header"><div class="region-inner clearfix"><div id="block-views-exp-phrmapedia-v2-page-2" class="block block-views no-title"><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><form action="" method="get" id="views-exposed-form-phrmapedia-v2-page-2" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-search-api-views-fulltext-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-search-api-views-fulltext">
+ <input id="edit-search-api-views-fulltext" name="" value="Search..." size="30" maxlength="128" class="form-text" type="text">
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input id="edit-submit-phrmapedia-v2" name="" value="Search" class="form-submit" type="submit">    </div>
+      </div>
+</div>
+</div></form></div>
+  </div></div></div></div>
+
+    </div> <!-- /.section -->
+
+    </div> <!-- /#header -->
+
+    <div class="desktop tablet">
+          <div id="menu-bar" class="nav clearfix"><nav id="block-menu-block-2" class="block block-menu-block menu-wrapper menu-bar-wrapper clearfix" role="navigation">  
+      <h2 class="element-invisible block-title">main</h2>
+  
+  <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+ <ul class="menu clearfix"> <!--Home/AboutUs/Donor/BloodInfo/Login/Contact-->
+<li><a href="/">HOME</a></li>
+<li><a href="/">ABOUT US</a></li>
+<li><a href="/donors/new">DONOR</a></li>
+<li><a href="/consumers/new">CONSUMER</a></li>
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>        
+  </li>
+<% else %>
+  <li>
+  <%= link_to('LOGIN', new_user_session_path)  %>  
+  </li>
+<% end %>
+<li><a href="/contacts/new">CONTACT US</a></li>
+</ul></div>
+
+  </nav></div>    <!-- /#menu_bar -->
+        </div>
+  <!-- desktop & tablet only -->
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+        <div id="content" class="column"><div class="section">
+      <!---->
+     <a id="main-content"></a>
+            
+                    <div class="tabs">
+                  </div>
+      
+            
+      <div id="block-system-main" class="block block-system no-title">  
+  
+  <!-- node--home-page.tpl.php / Homepage -->
+<div id="node-24" class="node node-home-page article 1 ia-l clearfix" about="/node/24" typeof="sioc:Item foaf:Document" role="article">
+  <!-- Top CTAs -->
+      <div class="column two">
+    <div class="field field-name-field-cta-left field-type-linkimagefield field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even"><img  class="image-style-none" src="<%= image_path 'img1.jpg' %>" ></div></div></div>  </div>
+  <div class="column two noMarginRight">
+    <div class="field field-name-field-cta-right field-type-linkimagefield field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even"><img  class="image-style-none" src="<%= image_path 'img5.jpg' %>" ></div></div></div> </div>
+  <!-- /Top CTAs -->
+  
+  <div class="clearfix"></div>
+  
+  <!-- Center Modules -->
+  <div class="modules clearfix node node-home-page article 1 ia-l count-3">
+      <section style="height: 160px;" id="block-block-14" class="block block-block"><div class="block-inner clearfix">  
+      <h2 class="block-title">Donor</h2>
+  
+  <div class="block-content content"><div class="clearfix">
+<p><span style="color: rgb(255, 255, 255);"><div align="justify">The Australian Red Cross Blood Service (ARCBS) collects around 1.4 million blood donations each year. Healthy adults aged between 16 and 70 can donate blood. </div></span></p>
+
+</div>
+</div>
+  </div></section><section style="height: 160px;" id="block-block-15" class="block block-block"><div class="block-inner clearfix">  
+      <h2 class="block-title">Consumer</h2>
+  
+  <div class="block-content content"><div align="justify">Blood Concentration is the amount of alcohol in the bloodstream or on one's breath. BAC is expressed as the weight of ethanol, measured in grams, in 100 milliliters of blood, or 210 liters of breath.</div>
+</div>
+  </div></section><section style="height: 160px; margin-right: 0px;" id="block-block-13" class="block block-block noMarginRight"><div class="block-inner clearfix">  
+      <h2 class="block-title">Blood Banks</h2>
+  
+  <div class="block-content content"><div align="justify">A blood bank is a cache or bank of blood or blood components, gathered as a result of blood donation or collection, stored and preserved for later use in blood transfusion.</div>
+  </div>
+  </div></section>      
+  </div>
+  <!-- /Center Modules -->
+  
+  <div class="clearfix"></div>
+  
+  <!-- Article Promotion -->
+  <div class="articles">
+    <div class="article clearfix">
+            <img src="<%= image_path 'img4.jpg' %>" >
+            
+      
+      <div class="teaser">
+        <%= yield %>
+      </div>
+    </div>
+    
+  </div>
+  <!-- /Article Promotion -->
+</div>
+
+  </div>      
+      
+      
+    </div></div> <!-- /.section, /#content -->
+    <div id="footer-wrapper" class="desktop tablet">
+
+    <div id="footer" class="clearfix">
+      <div class="region region-footer"><div class="region-inner clearfix"><div id="block-block-1" class="block block-block no-title"><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><p><a href="http://facebook.com/webvator" target="_top" title="facebook" class="facebook">facebook</a> <a href="http://twitter.com/webvator" target="_top" title="Twitter" class="twitter">twitter</a> <a href="https://plus.google.com/113257529672159926348" target="_top" title="Google Plus" class="gplus">google plus</a> <a href="http://youtube.com/webvator" target="_top" title="YouTube" class="youtube">youtube</a> <a href="http://flickr.com/webvator" target="_top" title="flickr" class="flickr">flickr</a></p>
+</div>
+  </div></div><div id="block-menu-menu-footer-menu" class="block block-menu no-title" role="navigation"><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><ul class="menu clearfix">
+<li><a href="/">HOME</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="/donors/new">DONOR</a></li>
+<li><a href="/consumers/new">CONSUMER</a></li>
+<li><a href="#">LOGIN</a></li>
+<li><a href="/contacts/new">CONTACT US</a></li>
+</ul></div>
+  </div></div></div></div>    </div> <!-- /#footer -->
+
+  </div> <!-- /#footer-wrapper -->
+    </div></div> <!-- /#main, /#main-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+
+  <div align="center"><b><a href="cell: 0091-7842910876">All Rights Reserved PBM, Powered by Surendra</a></b></div>
+<br/>
+</body>
+</html>

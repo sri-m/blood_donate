@@ -1,0 +1,23 @@
+<h3>Available Donors</h3>
+<table with="400">
+  <tr>
+    <td>Name</td><td>Email</td><td>Cell</td>
+  </tr>
+<% Donor.all.each do |s| %>
+  <tr>
+    <td><%= s.name %></td><td><%= s.email %></td><td><%= s.cell %></td>
+  </tr>
+<% end %>
+</table>
+<hr>
+<h3>Available Stock</h3>
+<table with="400">
+  <tr>
+    <td>Name</td><td>Quantiry</td><td>Expire Date</td>
+  </tr>
+<% Stock.all.each do |s| %>
+  <tr>
+    <td><%= s.name %></td><td><%= s.qty %></td><td><%= s.expire_date %></td>
+  </tr>
+<% end %>
+</table>
